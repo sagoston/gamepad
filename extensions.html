@@ -343,7 +343,7 @@
     
       <pre class="idl">
         interface GamepadTouch {
-          readonly attribute octet touchId;
+          readonly attribute unsigned long touchId;
           readonly attribute octet surfaceId;
           readonly attribute Float32Array position;
           readonly attribute Uint32Array? surfaceDimensions;
@@ -353,8 +353,9 @@
       <dl data-dfn-for="GamepadTouch">
         <dt><dfn>touchId</dfn></dt>
         <dd>
-          Unique id of the touch event. Range is [0, 255]. touchId is
-          incremented for each subsequent touch event.
+          Unique id of the touch event. Range is [0, 4294967295]. The user agent
+          is responsible for incrementing the touchId for each subsequent touch
+          event based on information provided by the device API.
         </dd>
     
         <dt><dfn>surfaceId</dfn></dt>
