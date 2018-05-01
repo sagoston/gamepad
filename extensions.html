@@ -358,16 +358,16 @@
     </section>
     
     <section>
-      <h2><dfn>GamepadLightColor</dfn> Enum</h2>
+      <h2><dfn>GamepadLightColor</dfn></h2>
       <p>
-        This interface represents the color of a light indicator.
+        This represents the color of a light indicator.
       </p>
     
       <pre class="idl">
-        interface GamepadLightColor {
-          readonly attribute octet red;
-          readonly attribute octet green;
-          readonly attribute octet blue;
+        dictionary GamepadLightColor {
+          required octet red;
+          required octet green;
+          required octet blue;
        };
       </pre>
       
