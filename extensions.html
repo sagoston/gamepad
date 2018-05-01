@@ -367,7 +367,10 @@
         <dt><dfn>position</dfn></dt>
         <dd>
           x, y coordinates of the touch event. Range of each coordinate is
-          normalized to [-1.0, 1.0]. MUST be a two-element array.
+          normalized to [-1.0, 1.0]. Along the x-axis, -1.0 references the
+          leftmost coordinate and 1.0 references the rightmost coordinate. Along
+          the y-axis, -1.0 references the topmost coordinate and 1.0 references
+          the bottommost coordinate. MUST be a two-element array.
         </dd>
         
         <dt><dfn>surfaceDimensions</dfn></dt>
